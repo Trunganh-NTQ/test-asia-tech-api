@@ -6,4 +6,5 @@ class Student < ApplicationRecord
   validates :phone, length: { maximum: 50 }
   validates :grade, inclusion: { in: 6..9 }
   # scope
+  default_scope -> { order(id: :desc) }
 end

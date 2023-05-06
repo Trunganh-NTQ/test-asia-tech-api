@@ -17,7 +17,7 @@ class Api::V1::StudentsController < Api::V1::ApplicationController
   end
 
   def create
-    @student = Company.new(student_params)
+    @student = Student.new(student_params)
     if @student.save
       render_success
     else
@@ -43,6 +43,6 @@ class Api::V1::StudentsController < Api::V1::ApplicationController
     end
 
     def student_params
-      params.require(:student).permit(:name, :grade, :birthdate, :phone_number)
+      params.require(:student).permit(:name, :grade, :birthday, :phone)
     end
 end

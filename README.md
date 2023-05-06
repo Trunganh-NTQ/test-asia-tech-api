@@ -1,24 +1,29 @@
-# README
+# ASIA TECH APP
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+## _ASIA TECH APP_
 
-Things you may want to cover:
+[![Build Status](https://travis-ci.org/joemccann/dillinger.svg?branch=master)](https://travis-ci.org/joemccann/dillinger)
 
-* Ruby version
+ASIA TECH for web client
 
-* System dependencies
+- ✨Magic ✨
 
-* Configuration
+## Tech
 
-* Database creation
+Iot uses a number of open source projects to work properly:
 
-* Database initialization
+- [NextJS](https://nextjs.org/) -
+- [PostgreSQL](https://www.postgresql.org/) - PostgreSQL
+- [Node](https://nodejs.org/) - v16.14.2
 
-* How to run the test suite
+## Installation
 
-* Services (job queues, cache servers, search engines, etc.)
+ASIA TECH requires [Node](https://nodejs.org/) - v16.14.2
 
-* Deployment instructions
+Please yarn before start the server.
 
-* ...
+```sh
+cd test-asia-tech-app
+yarn build
+yarn dev
+```
