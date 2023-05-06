@@ -1,6 +1,6 @@
-# ASIA TECH APP
+# ASIA TECH API
 
-## _ASIA TECH APP_
+## _ASIA TECH API_
 
 [![Build Status](https://travis-ci.org/joemccann/dillinger.svg?branch=master)](https://travis-ci.org/joemccann/dillinger)
 
@@ -12,18 +12,29 @@ ASIA TECH for web client
 
 Iot uses a number of open source projects to work properly:
 
-- [NextJS](https://nextjs.org/) -
+- [Ruby on Rails](https://rubyonrails.org) - Ruby 3.0.2!
 - [PostgreSQL](https://www.postgresql.org/) - PostgreSQL
-- [Node](https://nodejs.org/) - v16.14.2
 
 ## Installation
 
-ASIA TECH requires [Node](https://nodejs.org/) - v16.14.2
+ASIA TECH requires [Ruby](https://rubyonrails.org) v3.0.2 to run.
 
-Please yarn before start the server.
+Please install bundle gem then create PostgreSQL user before start the server.
 
 ```sh
-cd test-asia-tech-app
-yarn build
-yarn dev
+cd test-asia-tech-api
+bundle install
+```
+
+Migrate database
+
+```sh
+bundle exec rake db:create
+bundle exec rake db:migrate
+```
+
+Seed database
+
+```sh
+bundle exec rake db:seed
 ```
